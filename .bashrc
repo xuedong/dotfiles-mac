@@ -141,3 +141,9 @@ fi
 
 # julia path
 export PATH="/Applications/Julia-0.6.app/Contents/Resources/julia/bin:$PATH"
+
+# Golang path
+export GOROOT=/usr/local/opt/go/libexec/
+export GOPATH=/Users/xuedong/Programming/Languages/Golang/go
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
