@@ -140,7 +140,7 @@ if ! shopt -oq posix; then
 fi
 
 # julia path
-export PATH="/Applications/Julia-0.6.app/Contents/Resources/julia/bin:$PATH"
+export PATH="/Applications/Julia-1.3.app/Contents/Resources/julia/bin:$PATH"
 
 # Golang path
 export GOROOT=/usr/local/opt/go/libexec/
