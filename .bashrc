@@ -139,6 +139,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Path
+export PATH="/Users/xuedong/.local/bin:$PATH"
+
 # julia path
 export PATH="/Applications/Julia-1.3.app/Contents/Resources/julia/bin:$PATH"
 
@@ -148,3 +151,7 @@ export GOPATH=/Users/xuedong/Programming/Languages/Golang/go
 export GOBIN=/Users/xuedong/Programming/Languages/Golang/go/bin
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
+
+# JSC path
+alias js="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
