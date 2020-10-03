@@ -23,6 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'udalov/kotlin-vim'
 
 " all plugins must be added before this line
 call vundle#end()
@@ -99,3 +100,6 @@ set nu
 set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
+
+" search highlighting
+:noremap <F4> :set hlsearch! hlsearch?<CR>
