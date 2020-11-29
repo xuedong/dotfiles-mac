@@ -46,7 +46,7 @@ parse_git_branch() {
 }
 
 get_git_root() {
-  basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null
+  	basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null
 }
 
 update_git_prompt()
