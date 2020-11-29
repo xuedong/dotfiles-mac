@@ -41,27 +41,27 @@ case "$TERM" in
 esac
 
 # git prompt config
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+#parse_git_branch() {
+#   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+#}
 
-get_git_root() {
-  	basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null
-}
+#get_git_root() {
+#  	basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null
+#}
 
-update_git_prompt()
-{
-	GIT_BRANCH=$(parse_git_branch)
+#update_git_prompt()
+#{
+#	GIT_BRANCH=$(parse_git_branch)
+#
+#	if [ -n "$GIT_BRANCH" ]; then
+#		GIT_ROOT=$(get_git_root)
+#		echo -ne "\033]0;$(get_git_root): $(parse_git_branch)\007"
+#	else
+#		echo -ne "\033]0;\007"
+#	fi
+#}
 
-	if [ -n "$GIT_BRANCH" ]; then
-		GIT_ROOT=$(get_git_root)
-		echo -ne "\033]0;$(get_git_root): $(parse_git_branch)\007"
-	else
-		echo -ne "\033]0;\007"
-	fi
-}
-
-PROMPT_COMMAND="update_git_prompt; $PROMPT_COMMAND"
+#PROMPT_COMMAND="update_git_prompt; $PROMPT_COMMAND"
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -80,9 +80,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] $'
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $'
 fi
 unset color_prompt force_color_prompt
 
