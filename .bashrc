@@ -149,6 +149,7 @@ export PATH="/Applications/Julia-1.3.app/Contents/Resources/julia/bin:$PATH"
 export GOROOT=/usr/local/opt/go/libexec/
 export GOPATH=/Users/xuedong/Programming/Languages/Golang/go
 export GOBIN=/Users/xuedong/Programming/Languages/Golang/go/bin
+export GOPROXY=https://goproxy.io,direct
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
