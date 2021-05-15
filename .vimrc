@@ -81,12 +81,12 @@ let python_highlight_all=1
 syntax on
 
 " color scheme logic
-if has('gui_running')
-	set background=dark
-	colorscheme solarized
-else
-	colorscheme zenburn
-endif
+"if has('gui_running')
+"	set background=dark
+"	colorscheme solarized
+"else
+"	colorscheme zenburn
+"endif
 
 " switching between color schemes
 call togglebg#map("<F5>")
