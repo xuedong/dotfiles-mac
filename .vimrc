@@ -104,3 +104,6 @@ set shiftwidth=4
 
 " search highlighting
 :noremap <F4> :set hlsearch! hlsearch?<CR>
+
+" backspace
+set backspace=indent,eol,start
