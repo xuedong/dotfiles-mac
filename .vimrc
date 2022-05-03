@@ -7,6 +7,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
+Plugin 'tomlion/vim-solidity'
 
 " add all plugins here
 Plugin 'tmhedberg/SimpylFold'
