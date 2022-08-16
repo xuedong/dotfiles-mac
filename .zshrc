@@ -105,3 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# opam configuration
+[[ ! -r /Users/xuedong/.opam/opam-init/init.zsh ]] || source /Users/xuedong/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
